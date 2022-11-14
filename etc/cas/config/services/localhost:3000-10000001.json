@@ -1,0 +1,6 @@
+{
+  "@class" : "org.apereo.cas.services.CasRegisteredService",
+  "serviceId" : "^(https|imaps|http)://.*",
+  "name" : "HTTPS and IMAPS",
+  "id" : 10000001,
+}

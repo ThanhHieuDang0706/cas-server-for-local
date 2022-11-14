@@ -123,9 +123,13 @@ dependencies {
      * since versions are all resolved and controlled by the dependency management
      * plugin via the CAS bom.
      **/
+    implementation "org.apereo.cas:cas-server-support-jdbc:${project.'cas.version'}"
+    implementation "org.apereo.cas:cas-server-support-jdbc-drivers:${project.'cas.version'}"
+    implementation "org.apereo.cas:cas-server-support-jpa-hibernate:${project.'cas.version'}"
 
     implementation "org.apereo.cas:cas-server-core-api-configuration-model"
     implementation "org.apereo.cas:cas-server-webapp-init"
+    implementation "org.apereo.cas:cas-server-support-json-service-registry"
 
     if (project.hasProperty("casModules")) {
         def dependencies = project.getProperty("casModules").split(",")
