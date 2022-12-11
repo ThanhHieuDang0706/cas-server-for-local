@@ -1,6 +1,19 @@
 {
   "@class" : "org.apereo.cas.services.CasRegisteredService",
-  "serviceId" : "^(https|imaps|http)://.*",
+  "serviceId" : "^(https|imaps|http)://localhost:3000.*",
   "name" : "HTTPS and IMAPS",
+  "logoutType" : "BACK_CHANNEL",
   "id" : 10000001,
+  "attributeReleasePolicy" : {
+    "@class": "org.apereo.cas.services.ReturnAllAttributeReleasePolicy",
+    "principalAttributesRepository": {
+      "@class": "org.apereo.cas.authentication.principal.DefaultPrincipalAttributesRepository",
+      "attributeRepositoryIds": [
+        "java.util.HashSet",
+        [
+          "AMS"
+        ]
+      ]
+    }
+  }
 }

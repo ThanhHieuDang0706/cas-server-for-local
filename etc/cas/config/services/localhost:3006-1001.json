@@ -1,0 +1,6 @@
+{
+  "@class" : "org.apereo.cas.services.CasRegisteredService",
+  "serviceId" : "^(https|imaps|http)://localhost:3006.*",
+  "name" : "localhost port 3006/",
+  "id" : 1001,
+}
